@@ -52,3 +52,14 @@ body {
 .ontext {
     color: #ff0000;
 }
+@media screen and (max-width:600px) {
+    #clock {
+        font-size: 100px;
+    }
+    #days {
+        font-size: 16px;
+    }
+    #pmam {
+        font-size: 14px;
+    }
+}
