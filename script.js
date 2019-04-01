@@ -10,6 +10,16 @@ function clockUpdates () {
     hours = hours - 12;
     document.getElementById("pm").classList.add('ontext');
   }
+  else if (hours === 12) {
+    document.getElementById("pm").classList.add('ontext');
+  }
+  else if (hours > 0) {
+    document.getElementById("am").classList.add('ontext');
+  }
+  else {
+    hours = 12;
+    document.getElementById("am").classList.add('ontext');
+  }
   document.getElementById("time").innerHTML = hours + ":" + minutes + ":" + seconds;
   switch(days) {
     case 0:
