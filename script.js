@@ -2,7 +2,7 @@ setInterval(clockUpdates, 1000);
 
 function clockUpdates () {
   let date = new Date();
-  let hours = addZero(date.getHours());
+  let hours = date.getHours();
   let minutes = addZero(date.getMinutes());
   let seconds = addZero(date.getSeconds());
   let days = date.getDay();
